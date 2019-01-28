@@ -76,7 +76,6 @@ public class Client {
             scanner = new Scanner(socket.getInputStream());
             PrintWriter configFile = new PrintWriter("src/config/level" + levelNumber + ".cfg");
             String line;
-            System.out.println("dupa");
             while (scanner.hasNextLine()) {
                 line = scanner.nextLine();
                 System.out.println(line);
